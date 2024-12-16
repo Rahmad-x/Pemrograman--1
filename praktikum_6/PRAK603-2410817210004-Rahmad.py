@@ -6,15 +6,13 @@ else :
     matriks=[]
 
     for i in range(2):
-        baris_matriks = []
-        for j in range(kolom):
-            elemen = int(input(" "))
-            baris_matriks.append(elemen)
+        baris_matriks = list(map(int, input().split()))  # Membaca input satu baris dan mengubahnya menjadi list of integers
         matriks.append(baris_matriks)
+    
     hasil=[]
     for i in range(1):
         for j in range(kolom):
             hasil.append(matriks[i][j]*matriks[i+1][j])
 
-for row in hasil :
-    print(row ,end=" ")
+    for row in hasil :
+        print(row ,end=" ")

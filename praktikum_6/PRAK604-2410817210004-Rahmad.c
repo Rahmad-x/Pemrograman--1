@@ -6,10 +6,15 @@ int main(){
 
     scanf("%[^\n]%*c",&dimiliki);
     scanf("%[^\n]%*c",&diterima);
+
     if(strlen(dimiliki)==strlen(diterima)){
         int pagar=0;
         int bintang=0;
         for (int i = 0; i < strlen(dimiliki); i++) {
+            if (dimiliki[i]==' ' && diterima[i]==' '){
+
+            continue;
+            }
             if (dimiliki[i] == diterima[i]) {
                 printf("*");
             bintang ++;

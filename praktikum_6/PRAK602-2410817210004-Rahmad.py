@@ -1,9 +1,8 @@
 batas=int(input(""))
 bilangan=[]
 hasilkali=[]
-i=0
-for i in range(batas):
-    bilangan.append(int(input("")))
+
+bilangan = list(map(int, input("").split()))
 for i in range(batas):
     hasilkali.append(bilangan[i]*(i+1))
 for i in range(batas):

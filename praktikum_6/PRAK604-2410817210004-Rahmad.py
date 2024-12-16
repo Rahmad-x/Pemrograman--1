@@ -5,6 +5,8 @@ if len(dimiliki)==len(diterima):
     pagar=0
     bintang=0
     for i in range(len(dimiliki)):
+        if dimiliki[i]==' ' and diterima[i]==' ':
+            continue
         if dimiliki[i]==diterima[i]:
             print("*",end=" ")
             bintang +=1

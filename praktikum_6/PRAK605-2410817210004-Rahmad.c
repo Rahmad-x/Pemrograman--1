@@ -31,7 +31,7 @@ int main(){
     } 
     for(int i= 0;i<ordo;i++){
         for(int j= 0;j<ordo;j++){
-           printf("%d",hasil[i][j]);
+           printf("%d ",hasil[i][j]);
         }printf("\n");
     } 
 }   
