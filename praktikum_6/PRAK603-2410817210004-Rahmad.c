@@ -3,11 +3,11 @@ int main(){
     int n1,n2;
     scanf("%d",&n1);
     scanf("%d",&n2);
-    int matriks[1][n2=n1];
 
     if(n1!=n2){
         printf("Jumlah tidak sama");
     }else{
+        int matriks[1][n2=n1];
         for(int i=0;i<1;i++){
         for(int j=0;j<n1;j++){
             scanf("%d",&matriks[i][j]);
@@ -27,9 +27,5 @@ int main(){
         for(int i=0;i<n1;i++){
             printf("%d ",hasil[i]);
         }
-        
-        
-        
-    }
-
+        }
 }
