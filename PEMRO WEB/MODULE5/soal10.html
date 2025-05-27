@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>klik tombol berikut, dan sebuah alert akakn muncul 3 detik</p>
+    <p>setelah anda klik, maka tiap 3 detik alert akan muncul</p>
+    <button onclick="myFunction()">Tampilkan alert</button>
+
+    <script>
+      function myFunction() {
+        setInterval(function () {
+          alert("selamat datang");
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

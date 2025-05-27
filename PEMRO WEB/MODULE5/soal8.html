@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Klik Tombol berikut untuk menampilkan konfirmasi</p>
+    <button onclick="myFunction()">Klik disini</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x;
+        var r = confirm("apakah anda ingin melanjutkan?");
+        if (r == true) {
+          x = "anda menekan OK!";
+        } else {
+          x = "anda menekan Cancel!";
+        }
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

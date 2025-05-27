@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>klik tombol berikut untuk menampilkan konfirmasi</p>
+    <button onclick="myFunction()">Klik disini</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        var x;
+        var nama = prompt("sialhkan masukkan nama anda", "Galuh Meidaluna");
+        if (nama != null) {
+          x = "selamat datang ! " + nama + "bagaimana kabar anda hari ini?";
+          document.getElementById("demo").innerHTML = x;
+        }
+      }
+    </script>
+  </body>
+</html>
