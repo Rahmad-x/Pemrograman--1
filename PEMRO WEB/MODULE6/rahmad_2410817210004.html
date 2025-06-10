@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- css style -->
+    <style>
+      .navbar {
+  font-family: "Gloock";
+}
+.custom-nav-pills {
+  font-family: "Gravitas One", serif;
+}
+
+.borders .brTL,
+.borders .brTR,
+.borders .brBL,
+.borders .brBR {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  z-index: 999;
+  border: 0.5rem solid black;
+}
+
+.borders .brTL {
+  top: 0;
+  left: 20%;
+  border-right: none;
+  border-bottom: none;
+}
+
+.borders .brTR {
+  top: 0;
+  right: 20%;
+  border-left: none;
+  border-bottom: none;
+}
+
+.borders .brBL {
+  bottom: 0;
+  left: 20%;
+  border-top: none;
+  border-right: none;
+}
+
+.borders .brBR {
+  bottom: 0;
+  right: 20%;
+  border-top: none;
+  border-left: none;
+}
+
+    </style>
+    <title>MODULE 6</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-5 " style="height: 6rem;">
+      <div class="container ps-5 pe-5">
+        <a class="navbar-brand color-dark fw-bold fs-4 ms-5" href="#">JPhotograpy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-light " style="font-size: small;" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll gap-4 me-5"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active border border-1 px-4 " style="border-radius: 0.5rem;" aria-current="page" href="#">HOME</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">ABOUT ME</a>
+            </li> <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">PORTFOLIO</a>
+            </li> <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">CONTACT</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- border -->
+    <div class="borders">
+      <div class="brTR"></div>
+      <div class="brTL"></div>
+      <div class="brBL"></div>
+      <div class="brBR"></div>
+    </div>
+     <!-- border end -->
+     <!-- HEADER  star -->
+      <!-- font yang dipakai Gravitas One dan Sofia Sans Condensed/Trochut/Raleway -->
+<div class="container text-center py-5">
+  <h1 class="fw-bold text-dark fs-2" style="font-family: Gravitas One;">Hi. Hello.. I Am JohnDas...!</h1>
+  <h1 class=" fw-bold fs-3" style="font-family: Gravitas One;">I Travel Around The World To Get The Best Photos.!</h1>
+  <p class="text-muted" style="font-family:'Raleway'; white-space: pre;">A W A R D  W I N N I N G  P H O T O G R A P H E R  /  C I N E M A T O G R A P H E R  /  W R I T E R</p>
+</div>
+
+     <!-- HEADER SECION end -->
+    <!-- card star -->
+<div class="container">
+        <ul class="nav nav-pills mb-3 justify-content-center custom-nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link rounded-pill border border-2 px-3 text-dark" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-secondary" aria-controls="pills-profile" aria-selected="false">Landscape</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-secondary" aria-controls="pills-contact" aria-selected="false">Portrait</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-secondary" aria-controls="pills-disabled" aria-selected="false">Product</button>
+            </li>
+        </ul>
+
+        <div class="container shadow-sm px-0" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-3 gx-3 mx-0" style="padding:0.5rem 0px 7rem 0px; margin-left:0; margin-right: 0;">
+                    <div class="col"><img src="https://picsum.photos/300/300?random=1" class="img-fluid w-100 d-block shadow-sm" alt="Photo 1"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=2" class="img-fluid w-100 d-block shadow-sm" alt="Photo 2"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=3" class="img-fluid w-100 d-block shadow-sm" alt="Photo 3"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=4" class="img-fluid w-100 d-block shadow-sm" alt="Photo 4"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=5" class="img-fluid w-100 d-block shadow-sm" alt="Photo 5"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=6" class="img-fluid w-100 d-block shadow-sm" alt="Photo 6"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=7" class="img-fluid w-100 d-block shadow-sm" alt="Photo 7"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=8" class="img-fluid w-100 d-block shadow-sm" alt="Photo 8"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=9" class="img-fluid w-100 d-block shadow-sm" alt="Photo 9"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=10" class="img-fluid w-100 d-block shadow-sm" alt="Photo 10"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=11" class="img-fluid w-100 d-block shadow-sm" alt="Photo 11"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=12" class="img-fluid w-100 d-block shadow-sm" alt="Photo 12"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=13" class="img-fluid w-100 d-block shadow-sm" alt="Photo 13"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=14" class="img-fluid w-100 d-block shadow-sm" alt="Photo 14"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=15" class="img-fluid w-100 d-block shadow-sm" alt="Photo 15"></div>
+                    <div class="col"><img src="https://picsum.photos/300/300?random=16" class="img-fluid w-100 d-block shadow-sm" alt="Photo 16"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- card end -->
+
+<!-- footer start -->
+<footer class=" mt-5 text-center py-4">
+  <div class="container">
+    <h5 class="mb-1" style="font-family: Gloock;">JPhotography</h5>
+    <p class="text-muted small mb-3">© Copyright 2019. All Rights Reserved.</p>
+
+    <div class="d-flex justify-content-center gap-4 fs-4">
+      <a href="#"><i class="bi bi-dribbble text-muted"></i></a> 
+      <a href="#"><i class="bi bi-behance text-muted"></i></a>
+      <a href="#"><i class="bi bi-instagram text-muted"></i></a>
+      <a href="#"><i class="fab fa-500px text-muted"></i></a>
+      <a href="#"><i class="fab fa-flickr text-muted"></i></a>
+      <a href="#"><i class="bi bi-facebook text-muted"></i></a>
+      <a href="#"><i class="bi bi-twitter text-muted"></i></a>
+  
+    </div>
+  </div>
+</footer>
+<!-- footer end -->
+
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
